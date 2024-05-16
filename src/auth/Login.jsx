@@ -42,8 +42,15 @@ const Login = () => {
             }
             
             setToken(data.authorisation.token);
-            // il faut change
-            // navigate('/dashboard');
+            localStorage.setItem('id', data.user.id);
+            localStorage.setItem('nom', data.user.nom);
+            localStorage.setItem('prenom', data.user.prenom);
+            localStorage.setItem('email', data.user.email);
+            localStorage.setItem('telephone', data.user.telephone);
+            localStorage.setItem('avatar', data.user.pp? data.user.pp : '');
+            localStorage.setItem('date_naissance', data.user.date_naissance);
+            localStorage.setItem('adresse', data.user.adresse);
+            localStorage.setItem('lieu_naissance', data.user.lieu_naissance);
 
             navigate("/app/", { replace: true });
 
