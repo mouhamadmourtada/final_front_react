@@ -21,7 +21,10 @@ const Login = () => {
         }
 
         // il faut faire la fetch
-        fetch('http://localhost:8000/api/login', {
+        const urlLogin = import.meta.env.VITE_API_URL+'/login';
+        // console.log(urlLogin)
+        // return;
+        fetch(urlLogin, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
