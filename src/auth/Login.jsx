@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import { useAuth } from '../provider/authProvider';
 import { useNavigate } from 'react-router-dom';
 import IndiqueRequired from '../components/IndiqueRequired';
+import { Link } from 'react-router-dom';
+import { set } from 'react-hook-form';
+import { Loader } from '../components/Loader';
 
 const Login = () => {
   const { setToken } = useAuth();
@@ -10,10 +13,12 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [erreur, setErreur] = useState('');
-
+  const [isLoading, setIsloading] = useState(false);
 
 
     const handleLogin = async (event) => {
+        setErreur('');
+        setIsloading(true);
         event.preventDefault();
         if(!email || !password) {
             setErreur("Veuillez remplir tous les champs");
@@ -58,6 +63,8 @@ const Login = () => {
             console.error('Error:', error);
             setErreur(error.message || "Une erreur s'est produite");
             setErreur("Une erreur s'est produite");
+        }).finally(() => {
+            setIsloading(false);
         });
 
           
@@ -67,7 +74,16 @@ const Login = () => {
     <div
     //  className="flex flex-col items-center justify-center h-screen bg-gray-100"
      >
+        {isLoading && (
+            <div className='absolute h-screen w-screen flex justify-center items-center bg-gray-800 bg-opacity-30'>
+                {/* je veux mettre un bg avec un opacity */}
+                {/* bg-gray-100-opacity */}
+                <Loader />
+
+            </div>
+        )
         
+        }
        <section className="flex flex-col md:flex-row h-screen items-center">
 
             {/* image gauche */}
@@ -131,8 +147,7 @@ const Login = () => {
                         </div>
                     </button>
 
-                    <p className="mt-8">Need an account? <a href="#" className="text-blue-500 hover:text-blue-700 font-semibold">Create an
-                            account</a></p>
+                    <p className="mt-8">Vous n'avez pas de compte ? <Link to="/register" className="text-blue-500 hover:text-blue-700 font-semibold">Créer un compte</Link></p>
 
 
                 </div>
