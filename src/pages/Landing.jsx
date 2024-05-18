@@ -33,7 +33,7 @@ const Landing = () => {
 
             {/* <!-- Mobile Menu open: "block", Menu closed: "hidden" --> */}
             <div  class="inset-x-0 z-20 w-full px-6 py-4 shadow-md transition-all duration-300 ease-in-out lg:relative lg:top-0 lg:mt-0 lg:flex lg:w-auto lg:translate-x-0 lg:items-center lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
-                <Link to "/login" class="mt-4 block h-10 transform rounded-md border px-7 py-2 text-center text-sm capitalize  bg-chprimary   text-white  transition-colors duration-300 hover:bg-gray-100 dark:text-ch dark:hover:bg-gray-700 lg:mt-0 lg:w-auto"> Devenir chauffeur </Link>
+                <Link to="/register" class="mt-4 block h-10 transform rounded-md border px-7 py-2 text-center text-sm capitalize  bg-chprimary   text-white  transition-colors duration-300 hover:bg-gray-100 dark:text-ch dark:hover:bg-gray-700 lg:mt-0 lg:w-auto"> Devenir chauffeur </Link>
             </div>
         </nav>
 
