@@ -19,6 +19,12 @@ export default {
         "jay-primaire" : '#E9F1FA',
         "jay-secondaire" : "#00ABE4",
         "jay-tertiaire" : "#F2F2F2",
+        'chprimary':'#00719c',
+          'chsecondary':'#009BD6',
+          'chaccent':'#00415a'
+
+       
+
       }
     }
   },

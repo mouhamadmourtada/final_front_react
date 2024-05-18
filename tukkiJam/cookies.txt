@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+pro.tukkijamm.com	TRUE	/	FALSE	1999999999	_backend_pro_session	A4M6FhUMqiODz11RYVst7zEcnC5jyZLFMRHpmGlMbb3BuYWk7gmaIYJMWbT7kWfiEnsT%2FI90dBY5KnPEmDhREsoOoylu%2F5STX4OE0rxim%2BeSTTAWyidDwWT%2F6h6N9bzF97SrdWzVf1kaP%2F5GTP9rOdsMcVFSYyIhzxgn8mwJs2unSFnIMZNoguJAT4%2FUMp07YkO4TrDpbUN7zEGnkVin5SmWK9ilitBY5IEjnrUbngI2H2%2F4IEqa9v2bwR%2FHE1keRhrAOJL7ZFRlpF5YNmiAHxgYOpQmfQQ8M2wSLQ%3D%3D--%2FZrh8u8DR6g12E9H--04egn7HTg3RSZExMWDR%2BVg%3D%3D
+.pro.tukkijamm.com	TRUE	/	FALSE	1999999999	__cf_bm	N7AaI9o.RZInF5t2GSaPiLdIWjC8oKCnkVi5y3x5Cu4-1716044451-1.0.1.1-64_h4_UkdADhUG4.X6OpGkjhitIN7cRIJM3hS.U4tkbTicU.cykFTHeXbfXAshFp6PPbtyeIjnAx_dKTlkeO4Q
+pro.tukkijamm.com	TRUE	/	FALSE	1999999999	SameSite	None
+
